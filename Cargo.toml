@@ -1,7 +1,13 @@
+# cargo-features = ["edition2024"]
+
 [package]
-name = "gitignore-generator"
+name = "gitignorer"
 version = "0.1.0"
 edition = "2024"
+authors = ["foresightyj"]
+license = "MIT"
+homepage = "https://github.com/foresightyj/gitignorer"
+description = "A CLI tool to generate .gitignore files interactively"
 
 [dependencies]
 anyhow = "1.0.100"
@@ -14,4 +20,4 @@ lazy_static = "1.5.0"
 reqwest = "0.12.23"
 tokio = { version = "1.47.1", features = ["full", "rt-multi-thread"] }
 tokio-stream = { version = "0.1.17", features = ["full"] }
-zip = "6.0.0"
+zip = "7.0.0"
